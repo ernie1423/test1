@@ -55,5 +55,5 @@ jobs:
             - name: deployment
               uses: JamesIves/github-pages-deploy-action@v4.5.0
               with:
-                  folder: build/
+                  folder: .
 
