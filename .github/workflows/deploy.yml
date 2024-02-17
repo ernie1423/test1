@@ -23,7 +23,11 @@ jobs:
               run: |
                 npm install
                 npm run build:prod
-    
+            - name: Fix permissions
+              run: |
+                chmod -c -R +rX "_site/" | while read line; do
+                  echo "::warning title=Invalid file permissions automatically fixed::$line"
+                done
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               id: deployment
