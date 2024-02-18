@@ -45,7 +45,7 @@ jobs:
             id-token: write   # to verify the deployment originates from an appropriate source
         
         steps:
-            - uses: actions/checkout@v3
+            #- uses: actions/checkout@v3
               
             # - name: download artifacts
             #   uses: actions/download-artifact@v4
