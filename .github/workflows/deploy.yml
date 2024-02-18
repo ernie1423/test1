@@ -55,7 +55,7 @@ jobs:
                   
             - name: deployment
               id: deployment
-              uses: actions/deploy-pages@v4
+              uses: actions/deploy-pages@v1
               with:
                   artifact_name: my-artifact
 
