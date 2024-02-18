@@ -28,7 +28,7 @@ jobs:
             - name: Use Node.js
               uses: actions/setup-node@v3
               with:
-                  node-version: 18.0
+                  node-version: 18.x
     
             - name: Build
               run: |
@@ -40,7 +40,7 @@ jobs:
               with:
                 path: ./build
                 overwrite: true
-                name: github-pages
+                name: gh-pages
             
             - uses: actions/configure-pages@v4
 
