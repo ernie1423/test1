@@ -47,13 +47,10 @@ jobs:
               uses: actions/download-artifact@v4
               with:
                   name: my-artifact
-
-            - name: show directory
-              run: |
-                  ls
+                  path: build
                   
             - name: deployment
               uses: JamesIves/github-pages-deploy-action@v4.5.0
               with:
-                  folder: .
+                  folder: build
 
