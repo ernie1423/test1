@@ -47,11 +47,11 @@ jobs:
         steps:
             #- uses: actions/checkout@v3
               
-            - name: download artifacts
-              uses: actions/download-artifact@v4
-              with:
-                  name: my-artifact
-                  path: .
+            # - name: download artifacts
+            #   uses: actions/download-artifact@v4
+            #   with:
+            #       name: my-artifact
+            #       path: .
                   
             - name: deployment
               id: deployment
