@@ -28,6 +28,7 @@ jobs:
 
     environment: 
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
       
     permissions: 
       deployments: write
@@ -37,6 +38,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
       - name: Deploy to Github Pages
         uses: actions/deploy-pages@v1
         with:
